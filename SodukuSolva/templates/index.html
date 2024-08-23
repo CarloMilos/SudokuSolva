@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Upload and Run Code</title>
+</head>
+<body>
+    <h1>Upload and Run Code</h1>
+    
+    <!-- Input for uploading an image -->
+    <input type="file" id="image-upload" accept="image/*">
+    <button id="upload-button">Upload</button>
+    
+    <!-- Separate "Run" button -->
+    <button id="run-button">Run</button>
+    
+    <div id="output"></div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
